@@ -1,0 +1,49 @@
+function saludar(nombre: string) {
+    console.log("hola" + nombre);
+}
+
+let wolverine = {
+    nombre: "Logan"
+};
+saludar(wolverine.nombre);
+
+let mensaje = "hola";
+if (true) {
+    let mensaje: string = "adios";
+}
+console.log(mensaje);
+
+const OPCIONES = "";
+
+let nombre: string = "edgar";
+//nombre = 123;
+let numero: number = 123;
+let booleano: boolean = true;
+
+let hoy: Date = new Date("2020-01-01");
+
+let spiderman = {
+    nombre: "peter",
+    edad: 30,
+    poder: "subir paredes"
+};
+
+function activar(
+    quien: string,
+    objeto: string = "batiseñal",
+    momento?: string
+) {
+    let mensaje: string;
+    if (momento) {
+        momento = ` en la ${momento}`;
+    } else {
+        momento = ``;
+    }
+    mensaje = ` ${quien} activó ${objeto}` + momento;
+    return mensaje;
+}
+console.log(activar("gordon", "batiseñal", "tarde"));
+let mifuncion = function(a) {
+    return a;
+};
+let miFuncionF = a => a;
